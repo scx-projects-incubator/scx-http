@@ -1,6 +1,6 @@
 package cool.scx.http.parameters;
 
-import cool.scx.function.Function2Void;
+import dev.scx.function.Function2Void;
 
 import java.util.List;
 import java.util.Map;
