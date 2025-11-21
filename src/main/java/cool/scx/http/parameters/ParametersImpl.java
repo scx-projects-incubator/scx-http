@@ -1,7 +1,7 @@
 package cool.scx.http.parameters;
 
-import cool.scx.collections.multi_map.MultiMap;
-import cool.scx.function.Function2Void;
+import dev.scx.collections.multi_map.MultiMap;
+import dev.scx.function.Function2Void;
 
 import java.util.*;
 
