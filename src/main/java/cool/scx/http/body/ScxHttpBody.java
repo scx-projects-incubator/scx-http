@@ -9,7 +9,7 @@ import cool.scx.http.media.object.ObjectMediaReader;
 import cool.scx.http.media.string.StringMediaReader;
 import cool.scx.io.ByteInput;
 import cool.scx.object.node.Node;
-import cool.scx.reflect.TypeReference;
+import dev.scx.reflect.TypeReference;
 
 import java.io.File;
 import java.nio.charset.Charset;
