@@ -1,6 +1,6 @@
 package cool.scx.http.media.multi_part;
 
-import cool.scx.function.Function0;
+import dev.scx.function.Function0;
 import cool.scx.http.body.BodyAlreadyConsumedException;
 import cool.scx.http.body.BodyReadException;
 import cool.scx.http.body.ScxHttpBody;

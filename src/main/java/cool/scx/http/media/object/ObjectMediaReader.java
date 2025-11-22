@@ -9,9 +9,9 @@ import cool.scx.io.exception.ScxIOException;
 import cool.scx.object.ScxObject;
 import cool.scx.object.mapping.NodeMappingException;
 import cool.scx.object.parser.NodeParseException;
-import cool.scx.reflect.ScxReflect;
-import cool.scx.reflect.TypeInfo;
-import cool.scx.reflect.TypeReference;
+import dev.scx.reflect.ScxReflect;
+import dev.scx.reflect.TypeInfo;
+import dev.scx.reflect.TypeReference;
 
 import static cool.scx.http.media.string.StringMediaReader.STRING_MEDIA_READER;
 import static cool.scx.http.media_type.MediaType.APPLICATION_JSON;
