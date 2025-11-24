@@ -3,10 +3,10 @@ package cool.scx.http.media.input_stream;
 import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.headers.ScxHttpHeadersWritable;
 import cool.scx.http.media.MediaWriter;
-import cool.scx.io.ByteOutput;
-import cool.scx.io.ScxIO;
-import cool.scx.io.exception.AlreadyClosedException;
-import cool.scx.io.exception.ScxIOException;
+import dev.scx.io.ByteOutput;
+import dev.scx.io.ScxIO;
+import dev.scx.io.exception.AlreadyClosedException;
+import dev.scx.io.exception.ScxIOException;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -8,9 +8,9 @@ import cool.scx.http.media.multi_part.MultiPartPart;
 import cool.scx.http.media.multi_part.MultiPartStream;
 import cool.scx.http.media_type.MediaType;
 import cool.scx.http.media_type.ScxMediaType;
-import cool.scx.io.ByteArrayByteOutput;
-import cool.scx.io.DefaultByteInput;
-import cool.scx.io.supplier.ByteArrayByteSupplier;
+import dev.scx.io.ByteArrayByteOutput;
+import dev.scx.io.DefaultByteInput;
+import dev.scx.io.supplier.ByteArrayByteSupplier;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

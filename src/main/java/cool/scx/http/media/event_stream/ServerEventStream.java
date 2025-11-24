@@ -1,9 +1,9 @@
 package cool.scx.http.media.event_stream;
 
 import cool.scx.http.sender.HttpSendException;
-import cool.scx.io.ByteOutput;
-import cool.scx.io.exception.AlreadyClosedException;
-import cool.scx.io.exception.ScxIOException;
+import dev.scx.io.ByteOutput;
+import dev.scx.io.exception.AlreadyClosedException;
+import dev.scx.io.exception.ScxIOException;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 

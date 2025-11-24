@@ -2,14 +2,14 @@ package cool.scx.http.body;
 
 import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.media.MediaReader;
-import cool.scx.io.ByteInput;
-import cool.scx.io.DefaultByteInput;
-import cool.scx.io.exception.AlreadyClosedException;
-import cool.scx.io.exception.ScxIOException;
-import cool.scx.io.supplier.CacheByteSupplier;
-import cool.scx.io.supplier.ClosePolicyByteSupplier;
+import dev.scx.io.ByteInput;
+import dev.scx.io.input.DefaultByteInput;
+import dev.scx.io.exception.AlreadyClosedException;
+import dev.scx.io.exception.ScxIOException;
+import dev.scx.io.supplier.CacheByteSupplier;
+import dev.scx.io.supplier.ClosePolicyByteSupplier;
 
-import static cool.scx.io.supplier.ClosePolicyByteSupplier.singleClose;
+import static dev.scx.io.supplier.ClosePolicyByteSupplier.singleClose;
 
 /// CacheHttpBody
 ///

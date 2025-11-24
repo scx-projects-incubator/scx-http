@@ -5,11 +5,11 @@ import cool.scx.http.headers.ScxHttpHeadersWritable;
 import cool.scx.http.media.MediaWriter;
 import cool.scx.http.media_type.FileFormat;
 import cool.scx.http.sender.HttpSendException;
-import cool.scx.io.ByteInput;
-import cool.scx.io.ByteOutput;
-import cool.scx.io.ScxIO;
-import cool.scx.io.exception.AlreadyClosedException;
-import cool.scx.io.exception.ScxIOException;
+import dev.scx.io.ByteInput;
+import dev.scx.io.ByteOutput;
+import dev.scx.io.ScxIO;
+import dev.scx.io.exception.AlreadyClosedException;
+import dev.scx.io.exception.ScxIOException;
 
 import java.io.File;
 

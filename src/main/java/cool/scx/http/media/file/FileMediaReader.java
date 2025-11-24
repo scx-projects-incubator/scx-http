@@ -2,10 +2,10 @@ package cool.scx.http.media.file;
 
 import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.media.MediaReader;
-import cool.scx.io.ByteInput;
-import cool.scx.io.consumer.OutputStreamByteConsumer;
-import cool.scx.io.exception.AlreadyClosedException;
-import cool.scx.io.exception.ScxIOException;
+import dev.scx.io.ByteInput;
+import dev.scx.io.consumer.OutputStreamByteConsumer;
+import dev.scx.io.exception.AlreadyClosedException;
+import dev.scx.io.exception.ScxIOException;
 
 import java.io.File;
 import java.io.IOException;

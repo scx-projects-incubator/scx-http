@@ -5,10 +5,10 @@ import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.headers.ScxHttpHeadersWritable;
 import cool.scx.http.headers.content_disposition.ContentDisposition;
 import cool.scx.http.media_type.ScxMediaType;
-import cool.scx.io.ByteInput;
-import cool.scx.io.DefaultByteInput;
-import cool.scx.io.supplier.ByteArrayByteSupplier;
-import cool.scx.io.supplier.InputStreamByteSupplier;
+import dev.scx.io.ByteInput;
+import dev.scx.io.DefaultByteInput;
+import dev.scx.io.supplier.ByteArrayByteSupplier;
+import dev.scx.io.supplier.InputStreamByteSupplier;
 
 import java.io.File;
 import java.io.FileInputStream;

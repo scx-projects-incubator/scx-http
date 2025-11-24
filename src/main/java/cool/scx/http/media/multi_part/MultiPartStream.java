@@ -2,19 +2,19 @@ package cool.scx.http.media.multi_part;
 
 import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.headers.ScxHttpHeadersWritable;
-import cool.scx.io.ByteInput;
-import cool.scx.io.DefaultByteInput;
-import cool.scx.io.exception.AlreadyClosedException;
-import cool.scx.io.exception.NoMatchFoundException;
-import cool.scx.io.exception.NoMoreDataException;
-import cool.scx.io.exception.ScxIOException;
-import cool.scx.io.indexer.KMPByteIndexer;
-import cool.scx.io.supplier.BoundaryByteSupplier;
+import dev.scx.io.ByteInput;
+import dev.scx.io.DefaultByteInput;
+import dev.scx.io.exception.AlreadyClosedException;
+import dev.scx.io.exception.NoMatchFoundException;
+import dev.scx.io.exception.NoMoreDataException;
+import dev.scx.io.exception.ScxIOException;
+import dev.scx.io.indexer.KMPByteIndexer;
+import dev.scx.io.supplier.BoundaryByteSupplier;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import static cool.scx.io.supplier.ClosePolicyByteSupplier.noCloseDrain;
+import static dev.scx.io.supplier.ClosePolicyByteSupplier.noCloseDrain;
 
 /// MultiPartStream
 ///

@@ -2,7 +2,7 @@ package cool.scx.http.media.event_stream;
 
 import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.media.MediaReader;
-import cool.scx.io.ByteInput;
+import dev.scx.io.ByteInput;
 
 import static cool.scx.http.media.string.StringMediaReader.getContentTypeCharsetOrUTF8;
 
