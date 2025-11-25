@@ -3,12 +3,12 @@ package cool.scx.http.body;
 import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.media.MediaReader;
 import dev.scx.io.ByteInput;
-import dev.scx.io.input.DefaultByteInput;
 import dev.scx.io.exception.AlreadyClosedException;
 import dev.scx.io.exception.ScxIOException;
 import dev.scx.io.supplier.CacheByteSupplier;
 import dev.scx.io.supplier.ClosePolicyByteSupplier;
 
+import static dev.scx.io.ScxIO.createByteInput;
 import static dev.scx.io.supplier.ClosePolicyByteSupplier.singleClose;
 
 /// CacheHttpBody
@@ -33,7 +33,7 @@ public final class CacheHttpBody implements ScxHttpBody {
     @Override
     public ByteInput byteInput() {
         cacheByteSupplier.reset();
-        return new DefaultByteInput(singleCloseByteSupplier);
+        return createByteInput(singleCloseByteSupplier);
     }
 
     @Override

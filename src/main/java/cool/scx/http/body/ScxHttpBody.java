@@ -8,7 +8,7 @@ import cool.scx.http.media.multi_part.MultiPartStream;
 import cool.scx.http.media.object.ObjectMediaReader;
 import cool.scx.http.media.string.StringMediaReader;
 import dev.scx.io.ByteInput;
-import cool.scx.object.node.Node;
+import dev.scx.object.node.Node;
 import dev.scx.reflect.TypeReference;
 
 import java.io.File;

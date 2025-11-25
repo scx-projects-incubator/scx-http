@@ -6,14 +6,14 @@ import cool.scx.http.media.MediaWriter;
 import dev.scx.io.ByteOutput;
 import dev.scx.io.exception.AlreadyClosedException;
 import dev.scx.io.exception.ScxIOException;
-import cool.scx.object.mapping.NodeMappingException;
-import cool.scx.object.serializer.NodeSerializeException;
+import dev.scx.object.mapping.NodeMappingException;
+import dev.scx.object.serializer.NodeSerializeException;
 
 import static cool.scx.http.media.node.NodeHelper.trySetContentType;
 import static cool.scx.http.media_type.MediaType.APPLICATION_JSON;
 import static cool.scx.http.media_type.MediaType.APPLICATION_XML;
-import static cool.scx.object.ScxObject.toJson;
-import static cool.scx.object.ScxObject.toXml;
+import static dev.scx.object.ScxObject.toJson;
+import static dev.scx.object.ScxObject.toXml;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 /// ObjectMediaWriter  逻辑参考 {@link cool.scx.http.media.node.NodeMediaWriter}

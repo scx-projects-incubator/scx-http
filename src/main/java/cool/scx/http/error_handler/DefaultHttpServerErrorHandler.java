@@ -7,7 +7,7 @@ import cool.scx.http.exception.ScxHttpException;
 import cool.scx.http.headers.accept.Accept;
 import cool.scx.http.media_type.ScxMediaType;
 import cool.scx.http.status_code.ScxHttpStatusCode;
-import cool.scx.object.ScxObject;
+import dev.scx.object.ScxObject;
 
 import java.lang.System.Logger;
 import java.util.Map;

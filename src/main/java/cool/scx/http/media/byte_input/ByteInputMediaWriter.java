@@ -5,9 +5,9 @@ import cool.scx.http.headers.ScxHttpHeadersWritable;
 import cool.scx.http.media.MediaWriter;
 import dev.scx.io.ByteInput;
 import dev.scx.io.ByteOutput;
-import dev.scx.io.NullByteInput;
 import dev.scx.io.exception.AlreadyClosedException;
 import dev.scx.io.exception.ScxIOException;
+import dev.scx.io.input.NullByteInput;
 
 /// ByteInputMediaWriter
 ///
@@ -30,7 +30,7 @@ public final class ByteInputMediaWriter implements MediaWriter {
 
     @Override
     public long beforeWrite(ScxHttpHeadersWritable responseHeaders, ScxHttpHeaders requestHeaders) {
-        // 如果是 NullByteInput 我们可以特殊处理一下
+        // 如果是 NullByteInput 我们可以特殊处理一下 todo 或者说有必要吗?
         if (byteInput instanceof NullByteInput) {
             return 0;
         } else {

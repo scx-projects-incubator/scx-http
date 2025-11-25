@@ -7,7 +7,7 @@ import cool.scx.http.sender.HttpSendException;
 import cool.scx.http.sender.IllegalSenderStateException;
 import cool.scx.http.sender.ScxHttpSender;
 import cool.scx.http.sender.ScxHttpSenderStatus;
-import dev.scx.io.ByteArrayByteOutput;
+import dev.scx.io.output.ByteArrayByteOutput;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

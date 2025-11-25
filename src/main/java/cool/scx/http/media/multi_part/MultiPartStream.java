@@ -3,7 +3,6 @@ package cool.scx.http.media.multi_part;
 import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.headers.ScxHttpHeadersWritable;
 import dev.scx.io.ByteInput;
-import dev.scx.io.DefaultByteInput;
 import dev.scx.io.exception.AlreadyClosedException;
 import dev.scx.io.exception.NoMatchFoundException;
 import dev.scx.io.exception.NoMoreDataException;
@@ -14,6 +13,7 @@ import dev.scx.io.supplier.BoundaryByteSupplier;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+import static dev.scx.io.ScxIO.createByteInput;
 import static dev.scx.io.supplier.ClosePolicyByteSupplier.noCloseDrain;
 
 /// MultiPartStream
@@ -80,7 +80,7 @@ public final class MultiPartStream implements MultiPart, Iterator<MultiPartPart>
         // 1, 创建一个 可以一直读取到 分隔符的 字节 提供器
         var boundaryByteSupplier = new BoundaryByteSupplier(byteInput, new KMPByteIndexer(boundaryEndBytes), true);
         // 2, 设置为 不关闭底层 + close 时排空.
-        return new DefaultByteInput(noCloseDrain(boundaryByteSupplier));
+        return createByteInput(noCloseDrain(boundaryByteSupplier));
     }
 
     @Override

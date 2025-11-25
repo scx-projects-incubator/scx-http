@@ -15,7 +15,7 @@ import cool.scx.http.media.node.NodeMediaWriter;
 import cool.scx.http.media.object.ObjectMediaWriter;
 import cool.scx.http.media.string.StringMediaWriter;
 import dev.scx.io.ByteInput;
-import cool.scx.object.node.Node;
+import dev.scx.object.node.Node;
 
 import java.io.File;
 import java.io.InputStream;
