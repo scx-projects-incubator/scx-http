@@ -9,9 +9,9 @@ import cool.scx.http.headers.content_disposition.ContentDisposition;
 import cool.scx.http.media.MediaReader;
 import cool.scx.http.media_type.FileFormat;
 import cool.scx.http.media_type.ScxMediaType;
-import cool.scx.io.ByteInput;
-import cool.scx.io.exception.AlreadyClosedException;
-import cool.scx.io.exception.ScxIOException;
+import dev.scx.io.ByteInput;
+import dev.scx.io.exception.AlreadyClosedException;
+import dev.scx.io.exception.ScxIOException;
 
 import java.io.File;
 

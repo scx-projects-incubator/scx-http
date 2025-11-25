@@ -3,7 +3,7 @@ package cool.scx.http.media.multi_part;
 import cool.scx.http.exception.BadRequestException;
 import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.media.MediaReader;
-import cool.scx.io.ByteInput;
+import dev.scx.io.ByteInput;
 
 import static cool.scx.http.media_type.MediaType.MULTIPART_FORM_DATA;
 

@@ -3,10 +3,10 @@ package cool.scx.http.media.gzip;
 import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.headers.ScxHttpHeadersWritable;
 import cool.scx.http.media.MediaWriter;
-import cool.scx.io.ByteOutput;
-import cool.scx.io.ScxIO;
-import cool.scx.io.exception.AlreadyClosedException;
-import cool.scx.io.exception.ScxIOException;
+import dev.scx.io.ByteOutput;
+import dev.scx.io.ScxIO;
+import dev.scx.io.exception.AlreadyClosedException;
+import dev.scx.io.exception.ScxIOException;
 
 import static cool.scx.http.headers.content_encoding.ContentEncoding.GZIP;
 

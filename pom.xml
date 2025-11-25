@@ -83,7 +83,7 @@
         </dependency>
 
         <dependency>
-            <groupId>cool.scx</groupId>
+            <groupId>dev.scx</groupId>
             <artifactId>scx-io</artifactId>
             <version>${scx-io.version}</version>
         </dependency>
@@ -109,7 +109,7 @@
         <!-- *********************** 以下为依赖包版本 *********************** -->
         <scx-collections.version>0.0.1</scx-collections.version>
         <scx-common.version>4.5.0-SNAPSHOT</scx-common.version>
-        <scx-io.version>4.5.0-SNAPSHOT</scx-io.version>
+        <scx-io.version>0.0.1</scx-io.version>
         <scx-object.version>4.5.0-SNAPSHOT</scx-object.version>
         <testng.version>7.11.0</testng.version>
 

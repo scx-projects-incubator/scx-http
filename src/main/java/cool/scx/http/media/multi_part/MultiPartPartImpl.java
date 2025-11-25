@@ -3,7 +3,7 @@ package cool.scx.http.media.multi_part;
 import dev.scx.function.Function0;
 import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.headers.ScxHttpHeadersWritable;
-import cool.scx.io.ByteInput;
+import dev.scx.io.ByteInput;
 
 /// MultiPartPartImpl
 ///

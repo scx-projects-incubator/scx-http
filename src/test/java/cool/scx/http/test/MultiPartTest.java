@@ -8,15 +8,15 @@ import cool.scx.http.media.multi_part.MultiPartPart;
 import cool.scx.http.media.multi_part.MultiPartStream;
 import cool.scx.http.media_type.MediaType;
 import cool.scx.http.media_type.ScxMediaType;
-import cool.scx.io.ByteArrayByteOutput;
-import cool.scx.io.DefaultByteInput;
-import cool.scx.io.supplier.ByteArrayByteSupplier;
+import dev.scx.io.output.ByteArrayByteOutput;
+import dev.scx.io.supplier.ByteArrayByteSupplier;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
 import static cool.scx.http.media.multi_part.MultiPartStreamMediaReader.MULTI_PART_STREAM_MEDIA_READER;
+import static dev.scx.io.ScxIO.createByteInput;
 
 public class MultiPartTest {
 
@@ -50,7 +50,7 @@ public class MultiPartTest {
         long l = System.nanoTime();
         for (int j = 0; j < 9999; j = j + 1) {
 
-            var s = new DefaultByteInput(new ByteArrayByteSupplier(byteArray));
+            var s = createByteInput(new ByteArrayByteSupplier(byteArray));
             MultiPart read = MULTI_PART_STREAM_MEDIA_READER.read(s, ScxHttpHeaders.of().contentType(ScxMediaType.of(MediaType.MULTIPART_FORM_DATA).boundary("wwwwwwwwww")));
 
             for (MultiPartPart multiPartPart : read) {
@@ -63,7 +63,7 @@ public class MultiPartTest {
         long l1 = System.nanoTime();
         for (int j = 0; j < 9999; j = j + 1) {
 
-            var s = new DefaultByteInput(new ByteArrayByteSupplier(byteArray));
+            var s = createByteInput(new ByteArrayByteSupplier(byteArray));
             MultiPart read = MULTI_PART_STREAM_MEDIA_READER.read(s, ScxHttpHeaders.of().contentType(ScxMediaType.of(MediaType.MULTIPART_FORM_DATA).boundary("wwwwwwwwww")));
 
             for (MultiPartPart multiPartPart : read) {
@@ -98,7 +98,7 @@ public class MultiPartTest {
         byteArray = ArrayUtils.concat(byteArray, byteArray);
 
         // 测试 标准读取
-        var s = new DefaultByteInput(new ByteArrayByteSupplier(byteArray));
+        var s = createByteInput(new ByteArrayByteSupplier(byteArray));
 
         MultiPartStream read = MULTI_PART_STREAM_MEDIA_READER.read(s, ScxHttpHeaders.of().contentType(ScxMediaType.of(MediaType.MULTIPART_FORM_DATA).boundary("wwwwwwwwww")));
 

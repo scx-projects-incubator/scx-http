@@ -1,9 +1,9 @@
 package cool.scx.http.media;
 
 import cool.scx.http.headers.ScxHttpHeaders;
-import cool.scx.io.ByteInput;
-import cool.scx.io.exception.AlreadyClosedException;
-import cool.scx.io.exception.ScxIOException;
+import dev.scx.io.ByteInput;
+import dev.scx.io.exception.AlreadyClosedException;
+import dev.scx.io.exception.ScxIOException;
 
 /// 读取器 可用于 ServerRequest 和 ClientResponse
 ///

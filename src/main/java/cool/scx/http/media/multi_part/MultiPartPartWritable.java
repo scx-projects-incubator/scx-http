@@ -5,14 +5,15 @@ import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.headers.ScxHttpHeadersWritable;
 import cool.scx.http.headers.content_disposition.ContentDisposition;
 import cool.scx.http.media_type.ScxMediaType;
-import cool.scx.io.ByteInput;
-import cool.scx.io.DefaultByteInput;
-import cool.scx.io.supplier.ByteArrayByteSupplier;
-import cool.scx.io.supplier.InputStreamByteSupplier;
+import dev.scx.io.ByteInput;
+import dev.scx.io.supplier.ByteArrayByteSupplier;
+import dev.scx.io.supplier.InputStreamByteSupplier;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+
+import static dev.scx.io.ScxIO.createByteInput;
 
 /// MultiPartPartWritable
 ///
@@ -71,19 +72,19 @@ public interface MultiPartPartWritable extends MultiPartPart {
     }
 
     default MultiPartPartWritable body(InputStream os) {
-        return body(() -> new DefaultByteInput(new InputStreamByteSupplier(os)));
+        return body(() -> createByteInput(new InputStreamByteSupplier(os)));
     }
 
     default MultiPartPartWritable body(byte[] os) {
-        return body(() -> new DefaultByteInput(new ByteArrayByteSupplier(os)));
+        return body(() -> createByteInput(new ByteArrayByteSupplier(os)));
     }
 
     default MultiPartPartWritable body(String os) {
-        return body(() -> new DefaultByteInput(new ByteArrayByteSupplier(os.getBytes())));
+        return body(() -> createByteInput(new ByteArrayByteSupplier(os.getBytes())));
     }
 
     default MultiPartPartWritable body(File os) {
-        return body(() -> new DefaultByteInput(new InputStreamByteSupplier(new FileInputStream(os))));
+        return body(() -> createByteInput(new InputStreamByteSupplier(new FileInputStream(os))));
     }
 
 }

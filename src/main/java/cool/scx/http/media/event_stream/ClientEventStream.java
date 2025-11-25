@@ -1,11 +1,11 @@
 package cool.scx.http.media.event_stream;
 
 import cool.scx.http.body.BodyReadException;
-import cool.scx.io.ByteInput;
-import cool.scx.io.exception.AlreadyClosedException;
-import cool.scx.io.exception.NoMatchFoundException;
-import cool.scx.io.exception.NoMoreDataException;
-import cool.scx.io.exception.ScxIOException;
+import dev.scx.io.ByteInput;
+import dev.scx.io.exception.AlreadyClosedException;
+import dev.scx.io.exception.NoMatchFoundException;
+import dev.scx.io.exception.NoMoreDataException;
+import dev.scx.io.exception.ScxIOException;
 
 import java.nio.charset.Charset;
 

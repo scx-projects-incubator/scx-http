@@ -5,7 +5,7 @@ import cool.scx.http.media.event_stream.ClientEventStream;
 import cool.scx.http.media.event_stream.ServerEventStream;
 import cool.scx.http.media.event_stream.SseEvent;
 import cool.scx.http.media.event_stream.event.EventClientEventStream;
-import cool.scx.io.ScxIO;
+import dev.scx.io.ScxIO;
 import org.testng.annotations.Test;
 
 import java.io.IOException;

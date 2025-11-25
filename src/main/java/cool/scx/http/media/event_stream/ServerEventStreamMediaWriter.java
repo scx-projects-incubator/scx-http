@@ -4,7 +4,7 @@ import cool.scx.http.headers.ScxHttpHeaders;
 import cool.scx.http.headers.ScxHttpHeadersWritable;
 import cool.scx.http.media.MediaWriter;
 import cool.scx.http.media_type.ScxMediaType;
-import cool.scx.io.ByteOutput;
+import dev.scx.io.ByteOutput;
 
 import static cool.scx.http.media_type.MediaType.TEXT_EVENT_STREAM;
 import static java.nio.charset.StandardCharsets.UTF_8;
